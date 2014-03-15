@@ -4,7 +4,7 @@
 
 <div class="center hero-unit">
 <h1>Listing gists</h1>
-<table class="table">
+<table class="table table-hover table-bordered">
   <thead>
     <tr>
       <th>Snippet</th>
@@ -16,7 +16,7 @@
 
   <tbody>
     <% @gists.each do |gist| %>
-      <tr class="success">
+      <tr class="info">
         <td><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></td>
        <!--  <td><%= gist.snippet%></td> -->
         <td><%= gist.lang %></td>
