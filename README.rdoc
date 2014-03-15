@@ -19,6 +19,8 @@ Za kolorowanie składni gistów odpowiada <tt>pygments.rb</tt>. Kod jest kolorow
 
 Tytuły stron (znacznik <title>) są generowane, i zmienne w zależności na stronie. Odpowiedni kod zarządzający znajduję się w <tt>helper/application_controller.rb</tt>
 
+Do standardowego szablonu dodałem jeszcze pole date. Służy ono do podawania daty gist`a. Dla większej swobody użytkownika jest możliwość zmiany dany co do miesiąca i dnia. Jednak rok zawsze będzie ustawiony automatycznie na taki jaki jest aktualnie.
+
 ==Link
 
 Link do działającej aplikacji na heroku: http://my-gists.herokuapp.com/
