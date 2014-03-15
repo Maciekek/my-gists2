@@ -3,6 +3,12 @@
 Aplikacja zaliczeniowa labolatoria z przedmiotu "Architektura serwisów internetowych".
 Aplikacja <tt>My gist</tt> do przechowywania różnych kawałków kodów. 
 
+==Link
+
+Link do działającej aplikacji na heroku: http://my-gists.herokuapp.com/
+
+==Opis
+
 Do stworzenia tej aplikacji wykorzystałem:
 
 * pygments.rb
@@ -21,8 +27,5 @@ Do stworzenia tej aplikacji wykorzystałem:
 
 * Do standardowego szablonu dodałem jeszcze pole date. Służy ono do podawania daty gist`a. Dla większej swobody użytkownika jest możliwość zmiany dany co do miesiąca i dnia. Jednak rok zawsze będzie ustawiony automatycznie na taki jaki jest aktualnie.
 
-==Link
-
-Link do działającej aplikacji na heroku: http://my-gists.herokuapp.com/
 
 
