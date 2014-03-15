@@ -1,6 +1,12 @@
+<% title 'Edit gists' %>
+<div class="container">
+
+<div class="hero-unit">
 <h1>Editing gist</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @gist %> |
-<%= link_to 'Back', gists_path %>
+<%= link_to 'Show', edit_gist_path(@gist), class: 'btn  btn-default' %>
+<%= link_to 'Back', gists_path, class: 'btn  btn-default' %>
+</div>
+</div>

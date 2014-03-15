@@ -1,5 +1,5 @@
 
-
+<% title 'Main Page' %>
 <div class="container">
 
 <div class="center hero-unit">
@@ -16,9 +16,11 @@
 
   <tbody>
     <% @gists.each do |gist| %>
-      <tr>
-        <td><%= gist.snippet%></td>
+      <tr class="success">
+        <td><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></td>
+       <!--  <td><%= gist.snippet%></td> -->
         <td><%= gist.lang %></td>
+        
         <td><%= gist.description %></td>
         <td><%= link_to 'Show', gist, class:'btn btn-default' %></td>
         <td><%= link_to 'Edit', edit_gist_path(gist), class:'btn btn-default' %></td>
