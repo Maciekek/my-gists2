@@ -820,3 +820,73 @@ Processing by GistsController#index as HTML
   Rendered gists/index.html.erb within layouts/application (8.1ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-15 16:51:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 196ms (Views: 134.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-15 16:52:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (65.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 564ms (Views: 496.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists/1" for 127.0.0.1 at 2014-03-15 16:52:12 +0100
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered gists/show.html.erb within layouts/application (72.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 103ms (Views: 92.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-15 16:52:13 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-15 16:52:14 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (55.0ms)
+  Rendered gists/new.html.erb within layouts/application (57.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-03-15 16:52:18 +0100
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pXUUy+PZNcrBRU/WbJgMhOkBKxAJ7xHRBtwNC/jcssQ=", "gist"=>{"snippet"=>"int main", "lang"=>"c", "description"=>"", "date(1i)"=>"2014", "date(2i)"=>"3", "date(3i)"=>"15"}, "commit"=>"Create Gist"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (9.1ms)[0m  INSERT INTO "gists" ("created_at", "date", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 15 Mar 2014 15:52:18 UTC +00:00], ["date", Sat, 15 Mar 2014], ["description", ""], ["lang", "c"], ["snippet", "int main"], ["updated_at", Sat, 15 Mar 2014 15:52:18 UTC +00:00]]
+  [1m[36m (39.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gists/3
+Completed 302 Found in 61ms (ActiveRecord: 49.0ms)
+
+
+Started GET "/gists/3" for 127.0.0.1 at 2014-03-15 16:52:19 +0100
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered gists/show.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-15 16:52:23 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (4.0ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 34.8ms | ActiveRecord: 4.0ms)
