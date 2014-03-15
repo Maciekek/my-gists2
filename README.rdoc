@@ -1,7 +1,7 @@
 == README
 
 Aplikacja zaliczeniowa labolatoria z przedmiotu "Architektura serwisów internetowych".
-Aplikacha "My gist" do przechowywania różnych kawałków kodów. 
+Aplikacja <tt>My gist</tt> do przechowywania różnych kawałków kodów. 
 
 Do stworzenia tej aplikacji wykorzystałem:
 
@@ -23,4 +23,4 @@ Tytuły stron (znacznik <title>) są generowane, i zmienne w zależności na str
 
 Link do działającej aplikacji na heroku: http://my-gists.herokuapp.com/
 
-<tt>rake doc:app</tt>.
+
