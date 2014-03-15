@@ -1,28 +1,26 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplikacja zaliczeniowa labolatoria z przedmiotu "Architektura serwisów internetowych".
+Aplikacha "My gist" do przechowywania różnych kawałków kodów. 
 
-Things you may want to cover:
+Do stworzenia tej aplikacji wykorzystałem:
 
-* Ruby version
+* pygments.rb
 
-* System dependencies
+* redcarpet
 
-* Configuration
+* quiet_assets
 
-* Database creation
+* bootstrap
 
-* Database initialization
+==Ciekawostki
 
-* How to run the test suite
+Za kolorowanie składni gistów odpowiada <tt>pygments.rb</tt>. Kod jest kolorowany na stronie głównej, i podstronie <tt>show</tt>
 
-* Services (job queues, cache servers, search engines, etc.)
+Tytuły stron (znacznik <title>) są generowane, i zmienne w zależności na stronie. Odpowiedni kod zarządzający znajduję się w <tt>helper/application_controller.rb</tt>
 
-* Deployment instructions
+==Link
 
-* ...
+Link do działającej aplikacji na heroku: http://my-gists.herokuapp.com/
 
-
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
