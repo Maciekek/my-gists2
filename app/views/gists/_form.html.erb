@@ -29,6 +29,10 @@
     <%= f.label :description %><br>
     <%= f.text_field :description, size: 45, placeholder: 'Enter description here...' %>
   </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date, :discard_year => true %>
+  </div>
   <div class="actions">
     <%= f.submit 'Add gist', :class => 'btn btn-large btn-default'  %>
   </div> 
