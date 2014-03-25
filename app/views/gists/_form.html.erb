@@ -1,8 +1,8 @@
 <%= form_for(@gist) do |f| %>
 <%
-  all_lexers = Pygments.lexers.flatten.select.with_index(offset = 0) { |x,i| i % 2 == 0 }.sort 
-  all_lexers = all_lexers.delete_if { |x| x =~ /.\s./ }
-  all_lexers = all_lexers.map { |x| x.downcase }
+allowed = Pygments.lexers.flatten.select.with_index{|a,i| (i+1) % 2 == 0}
+allowed = allowed.map{|a| a[:aliases][0]}
+allowed = allowed.sort
 %>
 
   <% if @gist.errors.any? %>
@@ -23,7 +23,7 @@
   </div>
   <div class="field">
     <%= f.label :lang %><br>
-    <%= f.select :lang, all_lexers %>
+    <%= f.select :lang, allowed  %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
