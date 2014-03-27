@@ -4,7 +4,7 @@
 
 <div class="center hero-unit">
 <h1>Listing gists</h1>
-<table class="table table-hover table-bordered">
+<!-- <table class="table table-hover table-bordered">
   <thead>
     <tr>
       <th>Snippet</th>
@@ -12,25 +12,34 @@
       <th>Description</th>
       <th>Date</th>
     </tr>
-  </thead>
+  </thead> -->
 
-  <tbody>
+ <!--  <tbody> -->
+    <div class="col-6 col-sm-6 col-lg-4">
+    <div class="row">
     <% @gists.each do |gist| %>
       <tr class="info">
-        <td><%= raw Pygments.highlight(gist.snippet.length > 20 ? gist.snippet[0,20] + "..." : gist.snippet, lexer: gist.lang) %></td>
-       <!--  <td><%= gist.snippet%></td> -->
-        <td><%= gist.lang %></td>
+        <div class="thumbnail">
         
-        <td><%= gist.description %></td>
-        <td><%= gist.date %></td>
-        <td><%= link_to 'Show', gist, class:'btn btn-default' %>
+       <%= raw Pygments.highlight(gist.snippet.length > 100 ? gist.snippet[0,100] + "..." : gist.snippet, lexer: gist.lang) %>
+        <div class="caption">
+       <!-- <%= gist.snippet%> -->
+       <div class="col-md-1">Lang: <%= gist.lang %></div>
+        
+       <div class="col-md-1">Description: <%= gist.description %></div>
+       <div class="col-md-1">Date: <%= gist.date %></div>
+      <div class="col-md-1"> <%= link_to 'Show', gist, class:'btn btn-default' %>
         <%= link_to 'Edit', edit_gist_path(gist), class:'btn btn-default' %>
-        <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %></td>
+        <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %>
+        </div>
+        </div>
+        </div>
       </tr>
     <% end %>
-  </tbody>
-</table>
-
+<!--   </tbody>
+</table> -->
+</div>
+</div>
 <br>
 
 <%= link_to 'New Gist', new_gist_path, class: 'btn btn-large btn-default' %>
