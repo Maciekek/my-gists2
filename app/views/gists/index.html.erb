@@ -23,9 +23,9 @@
         
         <td><%= gist.description %></td>
         <td><%= gist.date %></td>
-        <td><%= link_to 'Show', gist, class:'btn btn-default' %></td>
-        <td><%= link_to 'Edit', edit_gist_path(gist), class:'btn btn-default' %></td>
-        <td><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %></td>
+        <td><%= link_to 'Show', gist, class:'btn btn-default' %>
+        <%= link_to 'Edit', edit_gist_path(gist), class:'btn btn-default' %>
+        <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %></td>
       </tr>
     <% end %>
   </tbody>
