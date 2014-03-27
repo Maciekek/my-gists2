@@ -1,0 +1,15 @@
+<div id="user_notice">
+	<%= notice %>
+	<%= alert %>
+</div>
+<div id="user_info">
+	<%- if user_signed_in? %>
+	  <p>Signed as <b><%= current_user.email %></b>,
+	  <%= link_to 'sign out', destroy_user_session_path, :method => :delete, :class => 'user_a' %>.</p>
+	<%- else %>
+	  <p>
+	    <%= link_to 'Register', new_user_registration_path, :class => 'user_a'%> |
+	    <%= link_to 'Sign in', new_user_session_path, :class => 'user_a' %>
+	  </p>
+	<%- end %>
+</div>

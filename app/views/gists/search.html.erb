@@ -1,0 +1,72 @@
+<%
+allowed = Pygments.lexers.flatten.select.with_index{|a,i| (i+1) % 2 == 0}
+allowed = allowed.map{|a| a[:aliases][0]}
+allowed = allowed.delete_if{|a| (/-cpp/ =~ a || /-objc/ =~ a)}
+allowed = allowed.sort
+%>
+
+<h2>Find gists</h2>
+<hr/>
+
+<div id="searchForm">
+  <form role="search">
+      
+      <div id="search">
+        <table><tr>
+          <td>Lang:</td>
+          <td><%= select_tag(:lang, options_for_select(allowed, params[:lang]))%></td>
+          </tr><tr>
+          <td>
+          Description:<br>
+          <div class="prompt">(leave empty to skip this field)</div>
+          </td><td>
+          <%= text_field_tag :desc, params[:desc] %><br>
+          </td> 
+        </tr>
+      </table>
+      </div> 
+
+      <div class="link3" id="search">
+      <%= submit_tag "Search", :snippet => nil %>
+      </div>
+  </form>
+</div>
+
+<% if(@gists.length > 0) %>
+<h3>Results</h3>
+<hr/>
+
+
+
+<table class="indexTable">
+  <thead>
+    <tr>
+      <th>Snippet</th>
+      <th>Lang</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gists.each do |gist| %>
+      <tr>
+        <td><div id="show_snippet">
+        <%= raw Pygments.highlight(gist.snippet.length > 20 ? gist.snippet[0,20] + "..." : gist.snippet, lexer: gist.lang) %>
+        </div>
+        </td>
+        <td><%= gist.lang %></td>
+        <td><%= gist.description %></td>
+        <td id="actions"><%= link_to 'Show', gist %>
+        <%- if user_signed_in? %>
+        <%= link_to 'Edit', edit_gist_path(gist) %>
+        <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%- end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<% elsif(@gists.length == 0 && (params.has_key?(:lang) || params.has_key?(:desc))) %>
+<b>No results found.</b>
+<% end %>
