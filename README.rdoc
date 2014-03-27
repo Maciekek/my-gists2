@@ -7,6 +7,16 @@ Aplikacja <tt>My gist</tt> do przechowywania różnych kawałków kodów.
 
 Link do działającej aplikacji na heroku: http://my-gists.herokuapp.com/
 
+==Funkcjonalności podstawowe --- CRUD
+
+* Dodawanie linków, opisów i języka
+
+* Edytowanie linków, i opisów
+
+* Usuwanie linków
+
+* Przeglądanie linków
+
 ==Opis
 
 Do stworzenia tej aplikacji wykorzystałem:
