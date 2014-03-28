@@ -13,7 +13,11 @@
       <th>Date</th>
     </tr>
   </thead> -->
+<%= link_to 'New Gist', new_gist_path, class: 'btn btn-large btn-default' %>
 
+<div class="pagination">
+  <%= will_paginate renderer: BootstrapPagination::Rails %>
+</div>
  <!--  <tbody> -->
     <div class="col-6 col-sm-6 col-lg-4">
     <div class="row">
@@ -41,6 +45,9 @@
 </div>
 </div>
 <br>
+<div class="pagination">
+  <%= will_paginate renderer: BootstrapPagination::Rails %>
+</div>
 
 <%= link_to 'New Gist', new_gist_path, class: 'btn btn-large btn-default' %>
 

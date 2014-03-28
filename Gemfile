@@ -11,6 +11,10 @@ group :development, :test do
 gem 'sqlite3'
 end
 
+#Paginator
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

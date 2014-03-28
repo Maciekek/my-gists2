@@ -7,28 +7,31 @@ allowed = allowed.sort
 <h2>Find gists</h2>
 <hr/>
 
-<div id="searchForm">
-  <form role="search">
-      
-      <div id="search">
-        <table><tr>
-          <td>Lang:</td>
-          <td><%= select_tag(:lang, options_for_select(allowed, params[:lang]))%></td>
-          </tr><tr>
-          <td>
-          Description:<br>
-          <div class="prompt">(leave empty to skip this field)</div>
-          </td><td>
-          <%= text_field_tag :desc, params[:desc] %><br>
-          </td> 
-        </tr>
-      </table>
-      </div> 
-
-      <div class="link3" id="search">
-      <%= submit_tag "Search", :snippet => nil, :class => 'btnSubmit' %>
-      </div>
-  </form>
+</div>
+ <!--  <tbody> -->
+    <div class="col-6 col-sm-6 col-lg-4">
+    <div class="row">
+    <% @gists.each do |gist| %>
+      <tr class="info">
+        <div class="thumbnail">
+        
+       <%= raw Pygments.highlight(gist.snippet.length > 100 ? gist.snippet[0,100] + "..." : gist.snippet, lexer: gist.lang) %>
+        <div class="caption">
+       <!-- <%= gist.snippet%> -->
+       <div class="col-md-1">Lang: <%= gist.lang %></div>
+        
+       <div class="col-md-1">Description: <%= gist.description %></div>
+       <div class="col-md-1">Date: <%= gist.date %></div>
+      <div class="col-md-1"> <%= link_to 'Show', gist, class:'btn btn-default' %>
+        <%= link_to 'Edit', edit_gist_path(gist), class:'btn btn-default' %>
+        <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %>
+        </div>
+        </div>
+        </div>
+      </tr>
+    <% end %>
+<!--   </tbody>
+</table> -->
 </div>
 
 <% if(@gists.length > 0) %>
@@ -38,31 +41,32 @@ allowed = allowed.sort
 
 
 <table class="indexTable">
-  <thead>
-    <tr>
-      <th>Snippet</th>
-      <th>Lang</th>
-      <th>Description</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-
-  <tbody>
+  </div>
+ <!--  <tbody> -->
+    <div class="col-6 col-sm-6 col-lg-4">
+    <div class="row">
     <% @gists.each do |gist| %>
-      <tr>
-        <td><div id="show_snippet">
-        <%= raw Pygments.highlight(gist.snippet.length > 20 ? gist.snippet[0,20] + "..." : gist.snippet, lexer: gist.lang) %>
+      <tr class="info">
+        <div class="thumbnail">
+        
+       <%= raw Pygments.highlight(gist.snippet.length > 100 ? gist.snippet[0,100] + "..." : gist.snippet, lexer: gist.lang) %>
+        <div class="caption">
+       <!-- <%= gist.snippet%> -->
+       <div class="col-md-1">Lang: <%= gist.lang %></div>
+        
+       <div class="col-md-1">Description: <%= gist.description %></div>
+       <div class="col-md-1">Date: <%= gist.date %></div>
+      <div class="col-md-1"> <%= link_to 'Show', gist, class:'btn btn-default' %>
+        <%= link_to 'Edit', edit_gist_path(gist), class:'btn btn-default' %>
+        <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %>
         </div>
-        </td>
-        <td><%= gist.lang %></td>
-        <td><%= gist.description %></td>
-        <td id="actions"><%= link_to 'Show', gist %>
-        <%= link_to 'Edit', edit_gist_path(gist) %>
-        <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </div>
+        </div>
       </tr>
     <% end %>
-  </tbody>
-</table>
+<!--   </tbody>
+</table> -->
+</div>
 <% else if(@gists.length == 0 && (params.has_key?(:lang) || params.has_key?(:desc))) %>
 <b>No results found.</b>
 <% end end %>
