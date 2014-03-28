@@ -28,7 +28,7 @@ Link do działającej aplikacji na heroku: http://my-gists.herokuapp.com/
 * tytułowanie stron 
 
 
-==Opis
+==Ciekawsze gemy
 
 Do stworzenia tej aplikacji wykorzystałem:
 
