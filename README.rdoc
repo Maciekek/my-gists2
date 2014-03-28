@@ -17,6 +17,17 @@ Link do działającej aplikacji na heroku: http://my-gists.herokuapp.com/
 
 * Przeglądanie linków
 
+==Zmiany 
+
+* Zmiana widoków (strona główna, dodanie gistów, wyświetlanie gistów, edycja gistów)
+
+* wygląd oparty o bootstrap
+
+* kolorowanie kodu
+
+* tytułowanie stron 
+
+
 ==Opis
 
 Do stworzenia tej aplikacji wykorzystałem:
