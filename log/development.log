@@ -6289,3 +6289,84 @@ Processing by GistsController#index as HTML
   Rendered gists/index.html.erb within layouts/application (70.4ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 101ms (Views: 96.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 07:50:12 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (1504.6ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 4399ms (Views: 4341.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 07:50:17 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.6ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (44.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 07:50:21 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (45.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 07:50:56 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (84.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1639ms (Views: 1637.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 07:51:12 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (34.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2611ms (Views: 2608.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 07:51:33 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.9ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (59.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3348ms (Views: 3346.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 07:51:41 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (47.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3252ms (Views: 3250.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 07:51:48 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (38.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2033ms (Views: 2030.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 07:52:21 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (36.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3071ms (Views: 3069.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 07:53:01 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (49.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2477ms (Views: 2475.6ms | ActiveRecord: 0.4ms)
