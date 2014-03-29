@@ -1,6 +1,7 @@
 <% title 'Main Page' %>
 <h1>Listing gists</h1>
-
+<div class = "center">
+<%= link_to 'New Gist', new_gist_path, class: 'btn btn-large btn-default' %></div>
 
 <div id="infinite-scrolling" style="visibility: hidden;">
   <%= will_paginate %>

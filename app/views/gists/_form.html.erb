@@ -4,7 +4,7 @@ allowed = Pygments.lexers.flatten.select.with_index{|a,i| (i+1) % 2 == 0}
 allowed = allowed.map{|a| a[:aliases][0]}
 allowed = allowed.sort
 %>
-
+<form role="form">
   <% if @gist.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@gist.errors.count, "error") %> prohibited this gist from being saved:</h2>
@@ -16,24 +16,23 @@ allowed = allowed.sort
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :snippet %><br>
+  <div class="form-group">
     <%= f.text_area :snippet, :size => "45x25", placeholder: 'Enter your code here...'  %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :lang %><br>
     <%= f.select :lang, allowed  %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
     <%= f.text_field :description, size: 45, placeholder: 'Enter description here...' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :date %><br>
     <%= f.date_select :date, :discard_year => true %>
   </div>
   <div class="actions">
     <%= f.submit 'Add gist', :class => 'btn btn-large btn-default'  %>
   </div> 
-<% end %>
+  <% end %>
+</form>

@@ -18939,3 +18939,1801 @@ Processing by GistsController#index as JS
   Rendered gists/_gist.html.erb (23.3ms)
   Rendered gists/index.js.erb (36.4ms)
 Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:29:10 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (404.8ms)
+  Rendered gists/index.html.erb within layouts/application (440.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 760ms (Views: 756.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2014-03-29 12:29:13 +0100
+Processing by GistsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5[0m
+  Rendered gists/_gist.html.erb (301.0ms)
+  Rendered gists/index.html.erb within layouts/application (334.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 397ms (Views: 396.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gists?page=2&_=1396092551453" for 127.0.0.1 at 2014-03-29 12:29:13 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396092551453"}
+  [1m[35mGist Load (0.7ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (26.9ms)
+  Rendered gists/index.js.erb (54.1ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.8ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2014-03-29 12:29:13 +0100
+Processing by GistsController#index as */*
+  Parameters: {"page"=>"3"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 10[0m
+  Rendered gists/_gist.html.erb (105.2ms)
+  Rendered gists/index.html.erb within layouts/application (125.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 182ms (Views: 180.3ms | ActiveRecord: 0.8ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?_=1396092551454&page=3" for 127.0.0.1 at 2014-03-29 12:29:16 +0100
+Processing by GistsController#index as JS
+  Parameters: {"_"=>"1396092551454", "page"=>"3"}
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 10
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (18.2ms)
+  Rendered gists/index.js.erb (32.6ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2014-03-29 12:35:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (2.7ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (266.5ms)
+  Rendered gists/index.html.erb within layouts/application (309.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 694ms (Views: 686.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:35:11 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (6.0ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.6ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (36.0ms)
+  Rendered gists/index.html.erb within layouts/application (58.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 181ms (Views: 173.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:35:23 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.6ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (50.6ms)
+  Rendered gists/index.html.erb within layouts/application (72.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 151ms (Views: 149.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:35:43 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.6ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (46.4ms)
+  Rendered gists/index.html.erb within layouts/application (68.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 130ms (Views: 129.2ms | ActiveRecord: 0.8ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?page=2&_=1396092943482" for 127.0.0.1 at 2014-03-29 12:35:55 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396092943482"}
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (165.2ms)
+  Rendered gists/index.js.erb (188.2ms)
+Completed 200 OK in 202ms (Views: 200.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2014-03-29 12:35:56 +0100
+Processing by GistsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (4.3ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5[0m
+  Rendered gists/_gist.html.erb (35.6ms)
+  Rendered gists/index.html.erb within layouts/application (53.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 146ms (Views: 140.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2014-03-29 12:35:56 +0100
+Processing by GistsController#index as */*
+  Parameters: {"page"=>"3"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 10[0m
+  Rendered gists/_gist.html.erb (66.0ms)
+  Rendered gists/index.html.erb within layouts/application (91.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 139ms (Views: 137.6ms | ActiveRecord: 0.9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?_=1396092943483&page=3" for 127.0.0.1 at 2014-03-29 12:35:58 +0100
+Processing by GistsController#index as JS
+  Parameters: {"_"=>"1396092943483", "page"=>"3"}
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 10
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (23.9ms)
+  Rendered gists/index.js.erb (34.6ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 12:36:05 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (64.9ms)
+  Rendered gists/new.html.erb within layouts/application (68.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 105ms (Views: 104.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new?page=2" for 127.0.0.1 at 2014-03-29 12:36:07 +0100
+Processing by GistsController#new as */*
+  Parameters: {"page"=>"2"}
+  Rendered gists/_form.html.erb (63.3ms)
+  Rendered gists/new.html.erb within layouts/application (75.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 177ms (Views: 176.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 12:37:38 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (41.1ms)
+  Rendered gists/new.html.erb within layouts/application (46.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 111ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 12:38:32 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (39.1ms)
+  Rendered gists/new.html.erb within layouts/application (40.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 81ms (Views: 80.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 12:38:47 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (47.3ms)
+  Rendered gists/new.html.erb within layouts/application (49.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 93ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 12:38:56 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (42.6ms)
+  Rendered gists/new.html.erb within layouts/application (45.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 12:39:33 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (58.4ms)
+  Rendered gists/new.html.erb within layouts/application (64.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 144ms (Views: 143.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 12:40:10 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (59.5ms)
+  Rendered gists/new.html.erb within layouts/application (66.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 141ms (Views: 140.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 12:40:48 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (58.7ms)
+  Rendered gists/new.html.erb within layouts/application (68.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1747ms (Views: 1746.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new?page=2" for 127.0.0.1 at 2014-03-29 12:40:52 +0100
+Processing by GistsController#new as */*
+  Parameters: {"page"=>"2"}
+  Rendered gists/_form.html.erb (54.2ms)
+  Rendered gists/new.html.erb within layouts/application (72.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 193ms (Views: 192.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 12:41:05 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (42.7ms)
+  Rendered gists/new.html.erb within layouts/application (44.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new?page=2" for 127.0.0.1 at 2014-03-29 12:41:18 +0100
+Processing by GistsController#new as */*
+  Parameters: {"page"=>"2"}
+  Rendered gists/_form.html.erb (48.0ms)
+  Rendered gists/new.html.erb within layouts/application (79.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 163ms (Views: 162.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-03-29 12:41:54 +0100
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X5iFk8GPoh6/mXfmybk8CA8eQTmOEK48+4G96M9Lxek=", "gist"=>{"snippet"=>"<form role=\"form\">\r\n  <div class=\"form-group\">\r\n    <label for=\"exampleInputEmail1\">Email address</label>\r\n    <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Enter email\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"exampleInputPassword1\">Password</label>\r\n    <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"exampleInputFile\">File input</label>\r\n    <input type=\"file\" id=\"exampleInputFile\">\r\n    <p class=\"help-block\">Example block-level help text here.</p>\r\n  </div>\r\n  <div class=\"checkbox\">\r\n    <label>\r\n      <input type=\"checkbox\"> Check me out\r\n    </label>\r\n  </div>\r\n  <button type=\"submit\" class=\"btn btn-default\">Submit</button>\r\n</form>", "lang"=>"html", "description"=>"html code", "date(1i)"=>"2014", "date(2i)"=>"3", "date(3i)"=>"29"}, "commit"=>"Add gist"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (10.0ms)[0m  [1mINSERT INTO "gists" ("created_at", "date", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 11:41:55 UTC +00:00], ["date", Sat, 29 Mar 2014], ["description", "html code"], ["lang", "html"], ["snippet", "<form role=\"form\">\r\n  <div class=\"form-group\">\r\n    <label for=\"exampleInputEmail1\">Email address</label>\r\n    <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Enter email\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"exampleInputPassword1\">Password</label>\r\n    <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\r\n  </div>\r\n  <div class=\"form-group\">\r\n    <label for=\"exampleInputFile\">File input</label>\r\n    <input type=\"file\" id=\"exampleInputFile\">\r\n    <p class=\"help-block\">Example block-level help text here.</p>\r\n  </div>\r\n  <div class=\"checkbox\">\r\n    <label>\r\n      <input type=\"checkbox\"> Check me out\r\n    </label>\r\n  </div>\r\n  <button type=\"submit\" class=\"btn btn-default\">Submit</button>\r\n</form>"], ["updated_at", Sat, 29 Mar 2014 11:41:55 UTC +00:00]]
+  [1m[35m (46.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists/29
+Completed 302 Found in 67ms (ActiveRecord: 56.7ms)
+
+
+Started GET "/gists/29" for 127.0.0.1 at 2014-03-29 12:41:55 +0100
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "29"]]
+  Rendered gists/show.html.erb within layouts/application (26.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/29?page=2" for 127.0.0.1 at 2014-03-29 12:41:57 +0100
+Processing by GistsController#show as */*
+  Parameters: {"page"=>"2", "id"=>"29"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "29"]]
+  Rendered gists/show.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 12:42:03 +0100
+Processing by GistsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (1.2ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/_gist.html.erb (40.7ms)
+  Rendered gists/index.html.erb within layouts/application (57.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 113ms (Views: 111.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 12:42:26 +0100
+Processing by GistsController#index as HTML
+  [1m[36m (3.4ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (2.3ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/_gist.html.erb (43.1ms)
+  Rendered gists/index.html.erb within layouts/application (74.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 158ms (Views: 151.9ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/gists/29" for 127.0.0.1 at 2014-03-29 12:42:30 +0100
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "29"]]
+  Rendered gists/show.html.erb within layouts/application (18.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 110ms (Views: 104.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists/29?page=2" for 127.0.0.1 at 2014-03-29 12:42:32 +0100
+Processing by GistsController#show as */*
+  Parameters: {"page"=>"2", "id"=>"29"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "29"]]
+  Rendered gists/show.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists/29" for 127.0.0.1 at 2014-03-29 12:43:15 +0100
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "29"]]
+  Rendered gists/show.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:43:17 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (45.8ms)
+  Rendered gists/index.html.erb within layouts/application (59.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 133ms (Views: 131.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:43:26 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (31.5ms)
+  Rendered gists/index.html.erb within layouts/application (54.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:45:32 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.6ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+ERROR: compiling _app_views_gists__gist_html_erb__872552829__635748828 RAISED /home/student/my-gists2/app/views/gists/_gist.html.erb:12: syntax error, unexpected '<'
+        <strong>Description:</strong> gist.description 
+         ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:15: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: syntax error, unexpected '<'
+    <div class="col-md-1"><strong>...
+     ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: syntax error, unexpected '<'
+    <div class="col-md-1"><strong>Date:</strong> ';@outp...
+                           ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected '<'
+     <div class="col-md-1">';@outpu...
+      ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tCONSTANT, expecting keyword_end
+...t_buffer.append=( link_to 'Show', gist, class:'btn btn-defau...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ink_to 'Show', gist, class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+..., gist, class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tCONSTANT, expecting keyword_end
+...t_buffer.append=( link_to 'Edit', edit_gist_path(gist), clas...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...dit_gist_path(gist), class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...(gist), class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tCONSTANT, expecting keyword_end
+...uffer.append=( link_to 'Destroy', gist, method: :delete, dat...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tCONSTANT, expecting keyword_end
+... :delete, data: { confirm: 'Are you sure?' }, class:'btn btn...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...: 'Are you sure?' }, class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...re?' }, class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:23: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:24: syntax error, unexpected '<'
+    </div>
+     ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:25: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:27: syntax error, unexpected '<'
+</div>';@output_buffer.to_s
+ ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:27: unterminated regexp meets end of file
+Function body:           def _app_views_gists__gist_html_erb__872552829__635748828(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "gists/_gist";_old_output_buffer = @output_buffer;gist = gist = local_assigns[:gist];gist_counter = gist_counter = local_assigns[:gist_counter];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<div class="center hero-unit">
+
+  <div class= "row">
+    <div class="thumbnail">
+    ';@output_buffer.append=( raw Pygments.highlight(gist.snippet.length > 100 ? gist.snippet[0,100] + "..." : gist.snippet, lexer: gist.lang) );@output_buffer.safe_append='
+           <div class="caption">
+           <!-- ';@output_buffer.append=( gist.snippet);@output_buffer.safe_append=' -->
+    <div class=" panel panel-default col-md-1"><strong>Lang:</strong> ';@output_buffer.append=( gist.lang );@output_buffer.safe_append='</div>
+           
+    <div class=" col-md-1">
+';      if gist.description.length > 0
+        <strong>Description:</strong> gist.description 
+        else
+        
+@output_buffer.safe_append='    </div>
+    
+
+
+    <div class="col-md-1"><strong>Date:</strong> ';@output_buffer.append=( gist.date );@output_buffer.safe_append='</div>
+     <div class="col-md-1">';@output_buffer.append=( link_to 'Show', gist, class:'btn btn-default' );@output_buffer.safe_append='
+    ';@output_buffer.append=( link_to 'Edit', edit_gist_path(gist), class:'btn btn-default' );@output_buffer.safe_append='
+    ';@output_buffer.append=( link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' );@output_buffer.safe_append='</div>
+       </div>   
+    </div>
+  </div>
+
+</div>';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:299:in `module_eval'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:299:in `compile'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:248:in `block in compile!'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:236:in `synchronize'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:236:in `compile!'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:142:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:161:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:141:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:399:in `block in collection_with_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:395:in `map'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:395:in `collection_with_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:291:in `render_collection'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:275:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:274:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/student/my-gists2/app/views/gists/index.html.erb:12:in `_app_views_gists_index_html_erb__433656957__635761538'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:143:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:161:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:141:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:97:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/base.rb:189:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:393:in `_run__77623999__process_action__callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/base.rb:136:in `process'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:44:in `process'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal.rb:195:in `dispatch'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal.rb:231:in `block in action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/query_cache.rb:36:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/migration.rb:369:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:373:in `_run__991882900__call__callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:38:in `call_app'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:20:in `block in call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:20:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/engine.rb:511:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/application.rb:97:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered gists/_gist.html.erb (36.3ms)
+  Rendered gists/index.html.erb within layouts/application (53.8ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (/home/student/my-gists2/app/views/gists/_gist.html.erb:12: syntax error, unexpected '<'
+        <strong>Description:</strong> gist.description 
+         ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:15: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: syntax error, unexpected '<'
+    <div class="col-md-1"><strong>...
+     ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: syntax error, unexpected '<'
+    <div class="col-md-1"><strong>Date:</strong> ';@outp...
+                           ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected '<'
+     <div class="col-md-1">';@outpu...
+      ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tCONSTANT, expecting keyword_end
+...t_buffer.append=( link_to 'Show', gist, class:'btn btn-defau...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ink_to 'Show', gist, class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+..., gist, class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tCONSTANT, expecting keyword_end
+...t_buffer.append=( link_to 'Edit', edit_gist_path(gist), clas...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...dit_gist_path(gist), class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...(gist), class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tCONSTANT, expecting keyword_end
+...uffer.append=( link_to 'Destroy', gist, method: :delete, dat...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tCONSTANT, expecting keyword_end
+... :delete, data: { confirm: 'Are you sure?' }, class:'btn btn...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...: 'Are you sure?' }, class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...re?' }, class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:23: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:24: syntax error, unexpected '<'
+    </div>
+     ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:25: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:27: syntax error, unexpected '<'
+</div>';@output_buffer.to_s
+ ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:27: unterminated regexp meets end of file):
+     9:            
+    10:     <div class=" col-md-1">
+    11:       <%if gist.description.length > 0
+    12:         <strong>Description:</strong> gist.description 
+    13:         else
+    14:         %>
+    15:     </div>
+  app/views/gists/index.html.erb:12:in `_app_views_gists_index_html_erb__433656957__635761538'
+
+
+  Rendered /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+  Rendered /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:47:42 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (1.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+ERROR: compiling _app_views_gists__gist_html_erb__872552829__628816838 RAISED /home/student/my-gists2/app/views/gists/_gist.html.erb:11: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...f gist.description.length > 0 );@output_buffer.safe_append='
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:12: syntax error, unexpected '<'
+...    ';@output_buffer.append=( <strong>Description:</strong> ...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:15: unknown regexp options - dv
+unmatched close parenthesis: /strong> gist.description );@output_buffer.safe_append='
+';         end 
+@output_buffer.safe_append='        
+    </i
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: syntax error, unexpected '<'
+    <div class="col-md-1"><strong>...
+     ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: syntax error, unexpected '<'
+    <div class="col-md-1"><strong>Date:</strong> ';@outp...
+                           ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected '<'
+     <div class="col-md-1">';@outpu...
+      ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Show', gist, class:'btn btn-defau...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ink_to 'Show', gist, class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+..., gist, class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_gist_path(gist), clas...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+...dit_gist_path(gist), class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...(gist), class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+...uffer.append=( link_to 'Destroy', gist, method: :delete, dat...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+... :delete, data: { confirm: 'Are you sure?' }, class:'btn btn...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+...: 'Are you sure?' }, class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...re?' }, class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:23: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:24: syntax error, unexpected '<'
+    </div>
+     ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:25: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:27: syntax error, unexpected '<'
+</div>';@output_buffer.to_s
+ ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:27: unterminated regexp meets end of file
+Function body:           def _app_views_gists__gist_html_erb__872552829__628816838(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "gists/_gist";_old_output_buffer = @output_buffer;gist = gist = local_assigns[:gist];gist_counter = gist_counter = local_assigns[:gist_counter];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<div class="center hero-unit">
+
+  <div class= "row">
+    <div class="thumbnail">
+    ';@output_buffer.append=( raw Pygments.highlight(gist.snippet.length > 100 ? gist.snippet[0,100] + "..." : gist.snippet, lexer: gist.lang) );@output_buffer.safe_append='
+           <div class="caption">
+           <!-- ';@output_buffer.append=( gist.snippet);@output_buffer.safe_append=' -->
+    <div class=" panel panel-default col-md-1"><strong>Lang:</strong> ';@output_buffer.append=( gist.lang );@output_buffer.safe_append='</div>
+           
+    <div class=" col-md-1">
+      ';@output_buffer.append=( if gist.description.length > 0 );@output_buffer.safe_append='
+       ';@output_buffer.append=( <strong>Description:</strong> gist.description );@output_buffer.safe_append='
+';         end 
+@output_buffer.safe_append='        
+    </div>
+    
+
+
+    <div class="col-md-1"><strong>Date:</strong> ';@output_buffer.append=( gist.date );@output_buffer.safe_append='</div>
+     <div class="col-md-1">';@output_buffer.append=( link_to 'Show', gist, class:'btn btn-default' );@output_buffer.safe_append='
+    ';@output_buffer.append=( link_to 'Edit', edit_gist_path(gist), class:'btn btn-default' );@output_buffer.safe_append='
+    ';@output_buffer.append=( link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' );@output_buffer.safe_append='</div>
+       </div>   
+    </div>
+  </div>
+
+</div>';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:299:in `module_eval'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:299:in `compile'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:248:in `block in compile!'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:236:in `synchronize'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:236:in `compile!'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:142:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:161:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:141:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:399:in `block in collection_with_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:395:in `map'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:395:in `collection_with_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:291:in `render_collection'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:275:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:274:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/student/my-gists2/app/views/gists/index.html.erb:12:in `_app_views_gists_index_html_erb__433656957__635761538'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:143:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:161:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:141:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:97:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/base.rb:189:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:393:in `_run__77623999__process_action__callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/base.rb:136:in `process'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:44:in `process'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal.rb:195:in `dispatch'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal.rb:231:in `block in action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/query_cache.rb:36:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/migration.rb:369:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:373:in `_run__991882900__call__callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:38:in `call_app'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:20:in `block in call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:20:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/engine.rb:511:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/application.rb:97:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered gists/_gist.html.erb (26.4ms)
+  Rendered gists/index.html.erb within layouts/application (50.7ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (/home/student/my-gists2/app/views/gists/_gist.html.erb:11: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...f gist.description.length > 0 );@output_buffer.safe_append='
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:12: syntax error, unexpected '<'
+...    ';@output_buffer.append=( <strong>Description:</strong> ...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:15: unknown regexp options - dv
+unmatched close parenthesis: /strong> gist.description );@output_buffer.safe_append='
+';         end 
+@output_buffer.safe_append='        
+    </i
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: syntax error, unexpected '<'
+    <div class="col-md-1"><strong>...
+     ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: syntax error, unexpected '<'
+    <div class="col-md-1"><strong>Date:</strong> ';@outp...
+                           ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:19: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected '<'
+     <div class="col-md-1">';@outpu...
+      ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Show', gist, class:'btn btn-defau...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ink_to 'Show', gist, class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:20: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+..., gist, class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_gist_path(gist), clas...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+...dit_gist_path(gist), class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:21: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...(gist), class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+...uffer.append=( link_to 'Destroy', gist, method: :delete, dat...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+... :delete, data: { confirm: 'Are you sure?' }, class:'btn btn...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+...: 'Are you sure?' }, class:'btn btn-default' );@output_buffe...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...re?' }, class:'btn btn-default' );@output_buffer.safe_append...
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:23: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:24: syntax error, unexpected '<'
+    </div>
+     ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:25: unknown regexp options - dv
+/home/student/my-gists2/app/views/gists/_gist.html.erb:27: syntax error, unexpected '<'
+</div>';@output_buffer.to_s
+ ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:27: unterminated regexp meets end of file):
+     8:     <div class=" panel panel-default col-md-1"><strong>Lang:</strong> <%= gist.lang %></div>
+     9:            
+    10:     <div class=" col-md-1">
+    11:       <%= if gist.description.length > 0 %>
+    12:        <%= <strong>Description:</strong> gist.description %>
+    13:         <%- end %>
+    14:         
+  app/views/gists/index.html.erb:12:in `_app_views_gists_index_html_erb__433656957__635761538'
+
+
+  Rendered /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:47:55 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+ERROR: compiling _app_views_gists__gist_html_erb__872552829__628583258 RAISED /home/student/my-gists2/app/views/gists/_gist.html.erb:11: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...f gist.description.length > 0 );@output_buffer.safe_append='
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+';         end 
+              ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:28: syntax error, unexpected keyword_ensure, expecting ')'
+/home/student/my-gists2/app/views/gists/_gist.html.erb:30: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_gists__gist_html_erb__872552829__628583258(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "gists/_gist";_old_output_buffer = @output_buffer;gist = gist = local_assigns[:gist];gist_counter = gist_counter = local_assigns[:gist_counter];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<div class="center hero-unit">
+
+  <div class= "row">
+    <div class="thumbnail">
+    ';@output_buffer.append=( raw Pygments.highlight(gist.snippet.length > 100 ? gist.snippet[0,100] + "..." : gist.snippet, lexer: gist.lang) );@output_buffer.safe_append='
+           <div class="caption">
+           <!-- ';@output_buffer.append=( gist.snippet);@output_buffer.safe_append=' -->
+    <div class=" panel panel-default col-md-1"><strong>Lang:</strong> ';@output_buffer.append=( gist.lang );@output_buffer.safe_append='</div>
+           
+    <div class=" col-md-1">
+      ';@output_buffer.append=( if gist.description.length > 0 );@output_buffer.safe_append='
+       
+';         end 
+@output_buffer.safe_append='        
+    </div>
+    
+
+
+    <div class="col-md-1"><strong>Date:</strong> ';@output_buffer.append=( gist.date );@output_buffer.safe_append='</div>
+     <div class="col-md-1">';@output_buffer.append=( link_to 'Show', gist, class:'btn btn-default' );@output_buffer.safe_append='
+    ';@output_buffer.append=( link_to 'Edit', edit_gist_path(gist), class:'btn btn-default' );@output_buffer.safe_append='
+    ';@output_buffer.append=( link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' );@output_buffer.safe_append='</div>
+       </div>   
+    </div>
+  </div>
+
+</div>';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:299:in `module_eval'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:299:in `compile'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:248:in `block in compile!'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:236:in `synchronize'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:236:in `compile!'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:142:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:161:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:141:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:399:in `block in collection_with_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:395:in `map'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:395:in `collection_with_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:291:in `render_collection'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:275:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:274:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/student/my-gists2/app/views/gists/index.html.erb:12:in `_app_views_gists_index_html_erb__433656957__635761538'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:143:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:161:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:141:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:97:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/base.rb:189:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:393:in `_run__77623999__process_action__callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/base.rb:136:in `process'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:44:in `process'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal.rb:195:in `dispatch'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal.rb:231:in `block in action'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/query_cache.rb:36:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/migration.rb:369:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:373:in `_run__991882900__call__callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:38:in `call_app'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:20:in `block in call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:20:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/engine.rb:511:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/application.rb:97:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/student/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+/home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered gists/_gist.html.erb (15.5ms)
+  Rendered gists/index.html.erb within layouts/application (32.3ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (/home/student/my-gists2/app/views/gists/_gist.html.erb:11: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...f gist.description.length > 0 );@output_buffer.safe_append='
+...                               ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+';         end 
+              ^
+/home/student/my-gists2/app/views/gists/_gist.html.erb:28: syntax error, unexpected keyword_ensure, expecting ')'
+/home/student/my-gists2/app/views/gists/_gist.html.erb:30: syntax error, unexpected keyword_end, expecting ')'):
+     8:     <div class=" panel panel-default col-md-1"><strong>Lang:</strong> <%= gist.lang %></div>
+     9:            
+    10:     <div class=" col-md-1">
+    11:       <%= if gist.description.length > 0 %>
+    12:        
+    13:         <%- end %>
+    14:         
+  app/views/gists/index.html.erb:12:in `_app_views_gists_index_html_erb__433656957__635761538'
+
+
+  Rendered /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/student/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:48:27 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (59.9ms)
+  Rendered gists/index.html.erb within layouts/application (77.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 122ms (Views: 118.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/gists/29" for 127.0.0.1 at 2014-03-29 12:48:37 +0100
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "29"]]
+  Rendered gists/show.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists/29?page=2" for 127.0.0.1 at 2014-03-29 12:48:39 +0100
+Processing by GistsController#show as */*
+  Parameters: {"page"=>"2", "id"=>"29"}
+  [1m[36mGist Load (0.8ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "29"]]
+  Rendered gists/show.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 64.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 12:48:45 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (27.8ms)
+  Rendered gists/index.html.erb within layouts/application (41.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 88ms (Views: 86.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-03-29 12:48:48 +0100
+Processing by GistsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (4.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5[0m
+  Rendered gists/_gist.html.erb (19.4ms)
+  Rendered gists/index.html.erb within layouts/application (34.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 128.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/gists?page=2&_=1396093725637" for 127.0.0.1 at 2014-03-29 12:48:49 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396093725637"}
+  [1m[35mGist Load (2.1ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (41.4ms)
+  Rendered gists/index.js.erb (56.7ms)
+Completed 200 OK in 71ms (Views: 68.0ms | ActiveRecord: 2.3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?_=1396093725638&page=3" for 127.0.0.1 at 2014-03-29 12:48:51 +0100
+Processing by GistsController#index as JS
+  Parameters: {"_"=>"1396093725638", "page"=>"3"}
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 10
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (19.4ms)
+  Rendered gists/index.js.erb (42.1ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?_=1396093725639&page=4" for 127.0.0.1 at 2014-03-29 12:48:54 +0100
+Processing by GistsController#index as JS
+  Parameters: {"_"=>"1396093725639", "page"=>"4"}
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 15
+  Rendered gists/_gist.html.erb (13.1ms)
+  Rendered gists/index.js.erb (33.9ms)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gists/15" for 127.0.0.1 at 2014-03-29 12:48:55 +0100
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  Rendered gists/show.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 89.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/15" for 127.0.0.1 at 2014-03-29 12:49:21 +0100
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "15"]]
+  Rendered gists/show.html.erb within layouts/application (17.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists/15?page=2" for 127.0.0.1 at 2014-03-29 12:49:28 +0100
+Processing by GistsController#show as */*
+  Parameters: {"page"=>"2", "id"=>"15"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  Rendered gists/show.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 125ms (Views: 121.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 12:49:37 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (1.1ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (42.3ms)
+  Rendered gists/index.html.erb within layouts/application (59.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 159ms (Views: 152.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists/29/edit" for 127.0.0.1 at 2014-03-29 12:49:40 +0100
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"29"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "29"]]
+  Rendered gists/_form.html.erb (42.4ms)
+  Rendered gists/edit.html.erb within layouts/application (44.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists/29/edit" for 127.0.0.1 at 2014-03-29 12:49:53 +0100
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "29"]]
+  Rendered gists/_form.html.erb (39.9ms)
+  Rendered gists/edit.html.erb within layouts/application (43.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists/29/edit?page=2" for 127.0.0.1 at 2014-03-29 13:06:44 +0100
+Processing by GistsController#edit as */*
+  Parameters: {"page"=>"2", "id"=>"29"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "29"]]
+  Rendered gists/_form.html.erb (22.2ms)
+  Rendered gists/edit.html.erb within layouts/application (31.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 78ms (Views: 76.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 13:06:45 +0100
+Processing by GistsController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/_gist.html.erb (19.2ms)
+  Rendered gists/index.html.erb within layouts/application (35.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-03-29 13:06:48 +0100
+Processing by GistsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.7ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5
+  Rendered gists/_gist.html.erb (16.7ms)
+  Rendered gists/index.html.erb within layouts/application (31.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 98ms (Views: 96.4ms | ActiveRecord: 1.1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?page=2&_=1396094806197" for 127.0.0.1 at 2014-03-29 13:06:48 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396094806197"}
+  [1m[36mGist Load (0.6ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered gists/_gist.html.erb (18.2ms)
+  Rendered gists/index.js.erb (37.8ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists?_=1396094806198&page=3" for 127.0.0.1 at 2014-03-29 13:06:50 +0100
+Processing by GistsController#index as JS
+  Parameters: {"_"=>"1396094806198", "page"=>"3"}
+  [1m[36mGist Load (0.8ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 10[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered gists/_gist.html.erb (27.6ms)
+  Rendered gists/index.js.erb (56.7ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 1.0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?_=1396094806199&page=4" for 127.0.0.1 at 2014-03-29 13:06:52 +0100
+Processing by GistsController#index as JS
+  Parameters: {"_"=>"1396094806199", "page"=>"4"}
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 15[0m
+  Rendered gists/_gist.html.erb (4.3ms)
+  Rendered gists/index.js.erb (22.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/13/edit" for 127.0.0.1 at 2014-03-29 13:06:58 +0100
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "13"]]
+  Rendered gists/_form.html.erb (41.7ms)
+  Rendered gists/edit.html.erb within layouts/application (49.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 119ms (Views: 114.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists/13/edit?page=2" for 127.0.0.1 at 2014-03-29 13:07:01 +0100
+Processing by GistsController#edit as */*
+  Parameters: {"page"=>"2", "id"=>"13"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  Rendered gists/_form.html.erb (26.8ms)
+  Rendered gists/edit.html.erb within layouts/application (35.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 121ms (Views: 118.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 13:07:02 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (47.5ms)
+  Rendered gists/index.html.erb within layouts/application (64.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 139ms (Views: 137.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists/29" for 127.0.0.1 at 2014-03-29 13:07:04 +0100
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "29"]]
+  Rendered gists/show.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists/29?page=2" for 127.0.0.1 at 2014-03-29 13:07:06 +0100
+Processing by GistsController#show as */*
+  Parameters: {"page"=>"2", "id"=>"29"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "29"]]
+  Rendered gists/show.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 13:07:09 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (28.5ms)
+  Rendered gists/index.html.erb within layouts/application (47.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 88ms (Views: 86.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 15:10:07 +0100
+Processing by GistsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/_gist.html.erb (23.5ms)
+  Rendered gists/index.html.erb within layouts/application (41.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 95ms (Views: 93.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2014-03-29 15:10:12 +0100
+Processing by GistsController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5[0m
+  Rendered gists/_gist.html.erb (49.4ms)
+  Rendered gists/index.html.erb within layouts/application (73.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 185ms (Views: 179.6ms | ActiveRecord: 0.6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?page=2&_=1396102208299" for 127.0.0.1 at 2014-03-29 15:10:12 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396102208299"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (23.3ms)
+  Rendered gists/index.js.erb (34.8ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?_=1396102208300&page=3" for 127.0.0.1 at 2014-03-29 15:10:16 +0100
+Processing by GistsController#index as JS
+  Parameters: {"_"=>"1396102208300", "page"=>"3"}
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 10
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/_gist.html.erb (19.5ms)
+  Rendered gists/index.js.erb (32.8ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists?_=1396102208301&page=4" for 127.0.0.1 at 2014-03-29 15:10:18 +0100
+Processing by GistsController#index as JS
+  Parameters: {"_"=>"1396102208301", "page"=>"4"}
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 15
+  Rendered gists/_gist.html.erb (3.7ms)
+  Rendered gists/index.js.erb (12.8ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/ajax-loader.gif"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists/search?lang=c%23" for 127.0.0.1 at 2014-03-29 15:10:55 +0100
+Processing by GistsController#search as HTML
+  Parameters: {"lang"=>"c#"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/student/my-gists2/app/models/gist.rb:4)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/student/my-gists2/app/models/gist.rb:4)
+  [1m[36mGist Load (1.0ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (lang LIKE '%c#%')[0m
+  Rendered gists/search.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists/search?page=2" for 127.0.0.1 at 2014-03-29 15:10:55 +0100
+Processing by GistsController#search as */*
+  Parameters: {"page"=>"2"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 0
+  Rendered gists/search.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 15:10:56 +0100
+Processing by GistsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/_gist.html.erb (18.4ms)
+  Rendered gists/index.html.erb within layouts/application (34.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.6ms)
