@@ -1,0 +1,19 @@
+<div class="center hero-unit">
+
+  <div class= "row">
+    <div class="thumbnail">
+    <%= raw Pygments.highlight(gist.snippet.length > 100 ? gist.snippet[0,100] + "..." : gist.snippet, lexer: gist.lang) %>
+           <div class="caption">
+           <!-- <%= gist.snippet%> -->
+    <div class=" panel panel-default col-md-1">Lang: <%= gist.lang %></div>
+           
+    <div class=" col-md-1">Description: <%= gist.description %></div>
+    <div class="col-md-1">Date: <%= gist.date %></div>
+     <div class="col-md-1"><%= link_to 'Show', gist, class:'btn btn-default' %>
+    <%= link_to 'Edit', edit_gist_path(gist), class:'btn btn-default' %>
+    <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-default' %></div>
+       </div>   
+    </div>
+  </div>
+
+</div>
