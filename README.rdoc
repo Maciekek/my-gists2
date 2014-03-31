@@ -45,6 +45,13 @@ Do stworzenia tej aplikacji wykorzystałem:
 
 * bootstrap
 
+* will_paginate-bootstrap
+
+* will_paginate
+
+* bootstrap-will_paginate
+
+
 ==Ciekawostki
 
 * Za kolorowanie składni gistów odpowiada <tt>pygments.rb</tt>. Kod jest kolorowany na stronie głównej, i 	podstronie <tt>show</tt>
